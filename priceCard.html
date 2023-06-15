@@ -1,157 +1,226 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Price Card</title>
-        <!-- Fontawesome link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        .container{
-            display: flex;
-            
-
-        }
-       .basic {
-            width: 300px;
-            height: 360px;
-            background-color: rgb(230, 236, 234);
-            border-radius: 5px;
-            margin-left: 10px;
-            box-shadow: 10px 8px 8px -8px rgb(163, 160, 160);
-            display: inline-block;
-            
-        }
-        .basic h3{
-            width: 250px;
-            height: 35px;
-            text-align: center;
-            background-color: rgb(61, 164, 130);
-            color: white;
-            padding-top: 10px;
-            border-radius: 5px;
-        }
-        .basic ul{
-            padding-left: 80px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .basic h1{
-            text-align: center;
-            
-        }
-        #buton{
-            width: 200px;
-            height: 30px;
-            margin-left: 20px;
-            border-radius: 5px;
-            background-color:  rgb(61, 164, 130);
-            color: white;
-        }
-        .standard{
-            width: 300px;
-            height: 360px;
-            background-color: rgb(230, 236, 234);
-            border-radius: 5px;
-            margin-left: 30px;
-            box-shadow: 10px 8px 8px -8px  rgb(163, 160, 160);
-            display: inline-block;
-        }
-        .standard h3{
-            width: 250px;
-            height: 35px;
-            text-align: center;
-            background-color: rgb(236, 52, 52);
-            color: white;
-            padding-top: 10px;
-            border-radius: 5px;
-        }
-        .standard ul{
-            padding-left: 80px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .standard h1{
-            text-align: center;
-            
-        }
-        .standard1{
-            width: 300px;
-            height: 360px;
-            background-color: rgb(230, 236, 234);
-            border-radius: 5px;
-            margin-left: 30px;
-            box-shadow: 10px 8px 8px -8px rgb(163, 160, 160);
-            display: inline-block;
-        }
-        .standard1 h3{
-            width: 250px;
-            height: 35px;
-            text-align: center;
-            background-color: rgb(61, 164, 130);
-            color: white;
-            padding-top: 10px;
-            border-radius: 5px;
-        }
-        .standard1 ul{
-            padding-left: 80px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .standard1 h1{
-            text-align: center;
-            
-        }
-        #right{
-            color: green;
-        }
-        #wrong{
-            color: red;
-        }
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 1000px;
+        height: 500px;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+      .basic {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(230, 236, 234);
+        border-radius: 5px;
+        margin-left: 10px;
+        box-shadow: 10px 8px 8px -8px rgb(163, 160, 160);
+        display: inline-block;
+      }
+      .basic h3 {
+        width: 250px;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(61, 164, 130);
+        color: white;
+        padding-top: 10px;
+        border-radius: 5px;
+      }
+      .basic ul {
+        padding-left: 80px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .basic h1 {
+        text-align: center;
+      }
+      .basic:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 6px 7px black;
+      }
+      #buton {
+        width: 200px;
+        height: 30px;
+        margin-left: 20px;
+        border-radius: 5px;
+        background-color: rgb(61, 164, 130);
+        color: white;
+      }
+      #buton:hover {
+        background-color: #114232;
+        color: white;
+        border-radius: 6px;
+      }
+      .standard {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(230, 236, 234);
+        border-radius: 5px;
+        margin-left: 30px;
+        box-shadow: 10px 8px 8px -8px rgb(163, 160, 160);
+        display: inline-block;
+      }
+      .standard h3 {
+        width: 250px;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(236, 52, 52);
+        color: white;
+        padding-top: 10px;
+        border-radius: 5px;
+      }
+      .standard ul {
+        padding-left: 80px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .standard h1 {
+        text-align: center;
+      }
+      .standard:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 6px 7px black;
+      }
+      .standard1 {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(230, 236, 234);
+        border-radius: 5px;
+        margin-left: 30px;
+        box-shadow: 10px 8px 8px -8px rgb(163, 160, 160);
+        display: inline-block;
+      }
+      .standard1 h3 {
+        width: 250px;
+        height: 35px;
+        text-align: center;
+        background-color: rgb(61, 164, 130);
+        color: white;
+        padding-top: 10px;
+        border-radius: 5px;
+      }
+      .standard1 ul {
+        padding-left: 80px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .standard1 h1 {
+        text-align: center;
+      }
+      .standard1:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 6px 7px black;
+      }
+      #right {
+        color: green;
+      }
+      #wrong {
+        color: red;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="basic">
-            <h3>Basic</h3>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Hosting</ul>
-            <ul><i id="wrong" class="fa fa-times" aria-hidden="true"></i> Domain</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 1 GB Space</ul>
-            <ul><i id="wrong" class="fa fa-times" aria-hidden="true"></i> Free SSL</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 1 Website Host</ul>
-            <h1>$5</h1>
+      <div class="basic">
+        <h3>Basic</h3>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Hosting
+        </ul>
+        <ul>
+          <i id="wrong" class="fa fa-times" aria-hidden="true"></i>
+          Domain
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          1 GB Space
+        </ul>
+        <ul>
+          <i id="wrong" class="fa fa-times" aria-hidden="true"></i>
+          Free SSL
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          1 Website Host
+        </ul>
+        <h1>$5</h1>
 
-            <div class="but">
-                <button id="buton">Buy Now</button>
-            </div>
+        <div class="but">
+          <button id="buton">Buy Now</button>
         </div>
+      </div>
 
-        <div class="standard">
-            <h3> Standard</h3>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Hosting</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Domain</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 10 GB Space</ul>
-            <ul><i id="wrong" class="fa fa-times" aria-hidden="true"></i> Free SSL</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 1 Website Host</ul>
-            <h1>$10</h1>
+      <div class="standard">
+        <h3>Standard</h3>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Hosting
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Domain
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          10 GB Space
+        </ul>
+        <ul>
+          <i id="wrong" class="fa fa-times" aria-hidden="true"></i>
+          Free SSL
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          1 Website Host
+        </ul>
+        <h1>$10</h1>
 
-            <div class="but">
-                <button id="buton">Buy Now</button>
-            </div>
+        <div class="but">
+          <button id="buton">Buy Now</button>
         </div>
-        
-        <div class="standard1">
-            <h3> Standard</h3>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Hosting</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Domain</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 10 GB Space</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> Free SSL</ul>
-            <ul><i id="right" class="fa fa-check" aria-hidden="true"></i> 1 Website Host</ul>
-            <h1>$20</h1>
+      </div>
 
-            <div class="but">
-                <button id="buton">Buy Now</button>
-            </div>
+      <div class="standard1">
+        <h3>Standard</h3>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Hosting
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Domain
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          10 GB Space
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          Free SSL
+        </ul>
+        <ul>
+          <i id="right" class="fa fa-check" aria-hidden="true"></i>
+          1 Website Host
+        </ul>
+        <h1>$20</h1>
+
+        <div class="but">
+          <button id="buton">Buy Now</button>
         </div>
-        
+      </div>
     </div>
-</body>
+  </body>
 </html>
